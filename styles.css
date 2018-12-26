@@ -1,0 +1,175 @@
+html {
+    background-color: #F0ECEE;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*Flex Box Display */
+.links {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.adopt-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+/* Text Decorations */
+.top-bar {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color:black;
+    font-size: 20px;
+    flex: 1
+}
+
+.red {
+    color:#FF4850;
+}
+
+a {
+    color:#88898B;
+    text-decoration: none;
+    display: block;
+    padding: 1px;
+}
+
+a:hover {
+    color: #FF4850;
+    background-color: #CCC;
+} 
+
+ul {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background-color: #FF4850;
+    padding: 10px;
+    border-radius: 15px;
+    color: #F0ECEE;
+    text-align: center;
+}
+
+.adopt-content {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color:black
+}
+
+/* Adjust Position */
+
+.question {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    padding: 8px;
+    position: relative;
+    top: 30px;
+}
+
+.Contact {
+    position: relative;
+    top: 20px;
+}
+
+/* Text Decorations */
+
+.description {
+    color: #88898B;
+    font-weight: 300;
+}
+
+
+
+/*Desktop Version */
+
+
+@media (min-width: 768px) {
+html {
+    background-image: url("bulldog.jpg");
+    background-size: cover;
+}
+
+.links {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+/* Adjust positioning */
+a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-weight: 400;
+}
+
+.Contact {
+    position: relative;
+    top: 5px;
+}
+
+/* Back to flex */
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Wasn't needed
+.container > * {
+    padding: 10px;
+    flex: 100%;
+}  */
+
+.navigation {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-bar {
+    flex: 1;
+    margin-left: 3%;
+}
+
+.links {
+    flex: 1;
+}
+
+.adopt-content {
+    flex: 1;
+    flex-basis: auto;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: 3%;
+    align-items: baseline;
+    text-align: left;
+}
+
+/* Positioning Fixes */
+
+.question {
+    width: 80%;
+    bottom: 0px;
+}
+
+.description {
+    width: 80%;
+} 
+
+.top-bar {
+    position: relative;
+    bottom: 6px;
+}
+
+}
